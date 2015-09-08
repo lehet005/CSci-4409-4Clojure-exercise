@@ -33,3 +33,117 @@
 
 (= (#(* 2 %) 11) 22)
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 10 - Intro to Maps
+
+; What I pasted in the box:
+
+20
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 16 - Hello World
+
+; What I pasted in the box:
+
+(fn [s] (str "Hello, " s "!"))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 17 - Sequences: map
+
+; What I pasted in the box:
+
+'(6 7 8)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 18 - Sequences: filter
+
+; What I pasted in the box:
+
+'(6 7)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 20 - Penultimate Element
+
+; What I pasted in the box:
+
+(fn [a] (nth a (- (count a) 2)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 21 - Nth Element
+
+; What I pasted in the box:
+
+(fn [a b] (first (nthnext a b)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 23 - Reverse a Sequence
+
+; What I pasted in the box:
+
+(fn [a] (into () a))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 25 - Find the odd numbers
+
+; What I pasted in the box:
+
+(fn [a] (filter odd? a))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 37 - Regular Expressions
+
+; What I pasted in the box:
+
+"ABC"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 40 - Interpose a Seq
+
+; What I pasted in the box:
+
+(fn [a b] (drop-last (interleave b (repeat a))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 43 - Reverse Interleave
+
+; What I pasted in the box:
+
+(fn [a b] (apply map list(partition b a)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 44 - Rotate Sequence
+
+; What I pasted in the box:
+
+(fn [a b]  (concat (second (split-at (mod a (count b)) b)) (first (split-at (mod a (count b)) b))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 46 - Flipping out
+
+; What I pasted in the box:
+
+(fn [a] (fn [c b] (a b c)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Problem 47 - Contain yourself
+
+; What I pasted in the box:
+
+4
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
